@@ -6,8 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    path: Assets/Scenes/StartScene.unity
+    guid: 899525b620a440441a2fde372421f927
+  - enabled: 1
+    path: Assets/Scenes/JimothyRun.unity
+    guid: b1bc72145bfe69540a02256f1244430b
+  - enabled: 1
+    path: Assets/Scenes/TutorialScence.unity
+    guid: 16dd65767a8a4474cb5184ca5d23f16e
+  - enabled: 1
+    path: Assets/Scenes/LoseScene.unity
+    guid: ea2b120a9f0416a4faf364984b446f25
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
