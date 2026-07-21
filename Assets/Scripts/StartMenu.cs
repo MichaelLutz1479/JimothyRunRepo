@@ -17,7 +17,7 @@ public class StartMenu : MonoBehaviour
 
     public void StartTheGame()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("JimothyRun");
     }
 
     public void Tutorial()
