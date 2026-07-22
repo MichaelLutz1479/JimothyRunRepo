@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 5128560439467810832}
   - component: {fileID: 5542840371305289709}
   - component: {fileID: 8621555464516291776}
-  - component: {fileID: 3849974659992573233}
   - component: {fileID: 8879382803712966774}
+  - component: {fileID: 8123534123997051137}
   m_Layer: 0
   m_Name: Jimothy
   m_TagString: Player
@@ -79,8 +79,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 3683dc8889f82a84895cb7cc69924122, type: 3}
-  m_Color: {r: 0, g: 1, b: 0.066224575, a: 1}
+  m_Sprite: {fileID: 4580967558226040386, guid: 07cffe54f66d18d4fbbbd0d4bbcafc29, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -116,9 +116,22 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!61 &3849974659992573233
-BoxCollider2D:
+  m_Constraints: 4
+--- !u!114 &8879382803712966774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5969426408877030200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85d3c209589691244aae39e83ee97fec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnGround: 0
+--- !u!60 &8123534123997051137
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -154,25 +167,22 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    pivot: {x: 0.5, y: -0.04347826}
+    oldSize: {x: 1.5, y: 1.4375}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!114 &8879382803712966774
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5969426408877030200}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85d3c209589691244aae39e83ee97fec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnGround: 0
+  m_AutoTiling: 1
+  m_Points:
+    m_Paths:
+    - - {x: 0.625, y: 1.375}
+      - {x: 0.5, y: 1.5}
+      - {x: -0.0625, y: 1.5}
+      - {x: -0.75, y: 1.125}
+      - {x: -0.75, y: 0.0625}
+      - {x: 0.625, y: 0.0625}
+      - {x: 0.625, y: 0.4375}
+      - {x: 0.75, y: 0.5625}
+      - {x: 0.75, y: 1.1875}
+  m_UseDelaunayMesh: 0
