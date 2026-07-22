@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Transform : MonoBehaviour
+public class TransformScript : MonoBehaviour
 {
     public bool onGround = false;
 
@@ -16,7 +16,7 @@ public class Transform : MonoBehaviour
     //Z, F
     public void TransfromAction(InputAction.CallbackContext context)
     {
-        if (transformed == false )
+        if (transformed == false)
         {
             transformed = true;
         }
