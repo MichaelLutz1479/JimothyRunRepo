@@ -30,8 +30,8 @@ public class StartMenu : MonoBehaviour
         Application.Quit();
     }
 
-    public void StartScene()
+    public void Restart()
     {
-        SceneManager.LoadScene("StartScene");
+        SceneManager.LoadScene("JimothyRun");
     }
 }
