@@ -1,4 +1,6 @@
 using UnityEngine;
+
+//ADD THIS TO THE SCRIPT OTHERWISE INPUT ACTION WILL NOT WORK
 using UnityEngine.InputSystem;
 
 public class TransformScript : MonoBehaviour
