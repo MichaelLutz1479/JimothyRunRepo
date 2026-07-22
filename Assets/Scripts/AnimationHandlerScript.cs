@@ -24,6 +24,7 @@ public class AnimationHandlerScript : MonoBehaviour
             if (Jimothy.GetComponent<PlayerScript>().OnGround == false)
             {
                 Jimothy.GetComponent<SpriteRenderer>().sprite = JimothyHumanFall;
+                Jimothy.GetComponent<Transform>().localScale = new Vector3(0.5f, 0.5f);
             }
             else
             {
