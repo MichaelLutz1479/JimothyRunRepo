@@ -885,6 +885,12 @@ MonoBehaviour:
   JimothyHumanFall: {fileID: 323209237882609006, guid: a4d2aa1248a63e44e8df9934161521e6, type: 3}
   JimothyHumanRun1: {fileID: 4580967558226040386, guid: 07cffe54f66d18d4fbbbd0d4bbcafc29, type: 3}
   JimothyHumanRun2: {fileID: 5813890398758163488, guid: 30007c33a5ba96644b4e7aec08ef9df5, type: 3}
+  JimothyRaccoonFall: {fileID: 3422503660653387911, guid: b8c14f66fb885bc4c888781673a863a6, type: 3}
+  JimothyRaccoonCrouch: {fileID: -6411386248928985795, guid: b4dc9d7399735cf4a8b09eec7a038eb0, type: 3}
+  JimothyRaccoonRun1: {fileID: 4153827902188191719, guid: ef83aad7da4de914d8c9ed6694a6b6df, type: 3}
+  JimothyRaccoonRun2: {fileID: 539108907033933879, guid: c5b9c816708de5948b5bd4507a7bec1a, type: 3}
+  JimothyRaccoonCrouch2: {fileID: -4740663032668409071, guid: 4d05eda1c8c61534992d9865b8876e44, type: 3}
+  JimothyCrouch: 0
   JimothyForm: 1
   AnimationFrameCount: 0
   RunAnimationSpeed: 15
