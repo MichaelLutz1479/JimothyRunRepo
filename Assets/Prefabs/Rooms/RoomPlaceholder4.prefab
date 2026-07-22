@@ -174,7 +174,7 @@ GameObject:
   - component: {fileID: 9030397974318253664}
   - component: {fileID: 3976271388961173607}
   m_Layer: 0
-  m_Name: RoomPlaceholder2
+  m_Name: RoomPlaceholder4
   m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -241,7 +241,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 3683dc8889f82a84895cb7cc69924122, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.97981787, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
