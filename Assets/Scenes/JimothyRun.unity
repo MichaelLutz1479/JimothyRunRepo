@@ -824,7 +824,7 @@ MonoBehaviour:
   - {fileID: 7732946432683814769, guid: 805ec536475cec640a385a4b2d80f087, type: 3}
   - {fileID: 7732946432683814769, guid: 15475c9f1c786bb4d9df0a21e05fd6fb, type: 3}
   - {fileID: 7732946432683814769, guid: 256db18cecac7b143ac9b877e7dd607f, type: 3}
-  roomSpeed: 10
+  roomSpeed: 2
   roomWidth: 10
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
