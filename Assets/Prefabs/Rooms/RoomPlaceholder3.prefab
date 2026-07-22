@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 2616409338008207470}
   - component: {fileID: 7986593277670508383}
   - component: {fileID: 3409364802343233357}
-  - component: {fileID: 4596243482171286401}
   m_Layer: 0
   m_Name: Platform
   m_TagString: Untagged
@@ -163,25 +162,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!251 &4596243482171286401
-PlatformEffector2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3145528995830079848}
-  m_Enabled: 1
-  m_UseColliderMask: 1
-  m_ColliderMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RotationalOffset: 0
-  m_UseOneWay: 1
-  m_UseOneWayGrouping: 0
-  m_SurfaceArc: 180
-  m_UseSideFriction: 0
-  m_UseSideBounce: 0
-  m_SideArc: 1
 --- !u!1 &7732946432683814769
 GameObject:
   m_ObjectHideFlags: 0
@@ -192,9 +172,10 @@ GameObject:
   m_Component:
   - component: {fileID: 6514404293030719094}
   - component: {fileID: 9030397974318253664}
+  - component: {fileID: 3976271388961173607}
   m_Layer: 0
   m_Name: RoomPlaceholder3
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -208,7 +189,7 @@ Transform:
   m_GameObject: {fileID: 7732946432683814769}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.01, y: 0, z: 0}
+  m_LocalPosition: {x: 14, y: 0, z: 1}
   m_LocalScale: {x: 10, y: 10, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -260,7 +241,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 3683dc8889f82a84895cb7cc69924122, type: 3}
-  m_Color: {r: 0, g: 0.14503145, b: 1, a: 1}
+  m_Color: {r: 0.021978855, g: 0, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -270,3 +251,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3976271388961173607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7732946432683814769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54b3c8c8a2719244ca8d6b25ebe3580b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyX: -20
