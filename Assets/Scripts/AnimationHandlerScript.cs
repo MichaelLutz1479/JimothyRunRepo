@@ -10,12 +10,12 @@ public class AnimationHandlerScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        Application.targetFrameRate = 60;
     }
     //true means human, false is raccoon, bool quicker than string lmao
     public bool JimothyForm = true;
     public int AnimationFrameCount = 0;
-    public int RunAnimationSpeed = 0;
+    public int RunAnimationSpeed = 20;
     // Update is called once per frame
     void Update()
     {
