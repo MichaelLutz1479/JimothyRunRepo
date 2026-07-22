@@ -8,11 +8,11 @@ public class PlayerScript : MonoBehaviour
     //ADD THIS TO THE SCRIPT OTHERWISE INPUT ACTION WILL NOT WORK
 
 
-public class TransformScript : MonoBehaviour
-{
-    public bool onGround = false;
 
-    bool transformed = false;
+
+    
+
+    public bool transformed = false;
 
 
     /*
@@ -36,7 +36,7 @@ public class TransformScript : MonoBehaviour
     //W, Up arrow, Spacebar
     public void JumpAction(InputAction.CallbackContext context)
     {
-        if (transformed == false && onGround == true)
+        if (transformed == false && OnGround == true)
         {
             GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 350f));
         }
@@ -51,7 +51,7 @@ public class TransformScript : MonoBehaviour
         }
     }
 
-}
+
 
 void Start()
     {

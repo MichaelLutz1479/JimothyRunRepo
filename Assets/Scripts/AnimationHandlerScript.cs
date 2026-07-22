@@ -25,6 +25,7 @@ public class AnimationHandlerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        JimothyForm = Jimothy.GetComponent<PlayerScript>().transformed;
         if (JimothyForm == true)
         {
             if (Jimothy.GetComponent<PlayerScript>().OnGround == false)
