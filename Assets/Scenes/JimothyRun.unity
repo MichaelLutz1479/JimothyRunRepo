@@ -476,7 +476,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5128560439467810832, guid: d7e2d753af1f5b94a8fe1e640dadd0a1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.37
+      value: -4.48
       objectReference: {fileID: 0}
     - target: {fileID: 5128560439467810832, guid: d7e2d753af1f5b94a8fe1e640dadd0a1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -513,6 +513,10 @@ PrefabInstance:
     - target: {fileID: 5969426408877030200, guid: d7e2d753af1f5b94a8fe1e640dadd0a1, type: 3}
       propertyPath: m_Name
       value: Jimothy
+      objectReference: {fileID: 0}
+    - target: {fileID: 8879382803712966774, guid: d7e2d753af1f5b94a8fe1e640dadd0a1, type: 3}
+      propertyPath: OnGround
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
