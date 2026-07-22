@@ -15,7 +15,7 @@ public class AnimationHandlerScript : MonoBehaviour
     //true means human, false is raccoon, bool quicker than string lmao
     public bool JimothyForm = true;
     public int AnimationFrameCount = 0;
-    public int RunAnimationSpeed = 60;
+    public int RunAnimationSpeed = 20;
     // Update is called once per frame
     void Update()
     {
