@@ -34,4 +34,9 @@ public class StartMenu : MonoBehaviour
     {
         SceneManager.LoadScene("JimothyRun");
     }
+
+    public void StartScene()
+    {
+        SceneManager.LoadScene("StartScene");
+    }
 }
