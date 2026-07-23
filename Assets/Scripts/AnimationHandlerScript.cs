@@ -53,7 +53,7 @@ public class AnimationHandlerScript : MonoBehaviour
             {
                 Jimothy.GetComponent<SpriteRenderer>().sprite = JimothyRaccoonFall;
             }
-            else if (JimothyCrouch == true)
+            else if (Jimothy.GetComponent<PlayerScript>().Crouched == true)
             {
                 AnimationFrameCount++;
                 if (AnimationFrameCount == (RunAnimationSpeed / 2))

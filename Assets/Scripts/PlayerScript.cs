@@ -7,9 +7,9 @@ public class PlayerScript : MonoBehaviour
     public bool transformed = false;
     public PolygonCollider2D humanCollider;
     public PolygonCollider2D raccoonCollider;
-
+    public Sprite CrouchSprite;
     public bool OnGround;
-
+    public bool Crouched = false;
     //Q, E
     public void TransfromAction(InputAction.CallbackContext context)
     {
@@ -41,7 +41,8 @@ public class PlayerScript : MonoBehaviour
     {
         if (transformed == true)
         {
-
+            GetComponent<SpriteRenderer>().sprite = CrouchSprite;
+            Crouched = true;
         }
     }
 
