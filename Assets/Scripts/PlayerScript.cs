@@ -5,7 +5,6 @@ using UnityEngine.InputSystem;
 public class PlayerScript : MonoBehaviour
 {
     public bool transformed = false;
-
     public PolygonCollider2D humanCollider;
     public PolygonCollider2D raccoonCollider;
 
@@ -64,4 +63,6 @@ void Start()
     {
         OnGround = false;
     }
+
+
 }
