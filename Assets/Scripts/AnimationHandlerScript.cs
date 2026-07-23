@@ -16,17 +16,18 @@ public class AnimationHandlerScript : MonoBehaviour
     void Start()
     {
         Application.targetFrameRate = 60;
+        JimothyForm = false;
     }
-    //true means human, false is raccoon, bool quicker than string lmao
-    public bool JimothyCrouch = false;
-    public bool JimothyForm = true;
+    //Sorry Oliver lowkey had to change how "JimothyForm" works to fix a bug. False means human now. 
+    bool JimothyCrouch = false;
+    bool JimothyForm = false;
     public int AnimationFrameCount = 0;
     public int RunAnimationSpeed = 20;
     // Update is called once per frame
     void Update()
     {
         JimothyForm = Jimothy.GetComponent<PlayerScript>().transformed;
-        if (JimothyForm == true)
+        if (JimothyForm == false)
         {
             if (Jimothy.GetComponent<PlayerScript>().OnGround == false)
             {
@@ -46,7 +47,7 @@ public class AnimationHandlerScript : MonoBehaviour
                 }
             }
         }
-        if (JimothyForm == false)
+        else if (JimothyForm == true)
         {
             if (Jimothy.GetComponent<PlayerScript>().OnGround == false)
             {

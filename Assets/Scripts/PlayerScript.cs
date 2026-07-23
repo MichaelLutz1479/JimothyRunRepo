@@ -52,6 +52,7 @@ void Start()
     {
         GetComponent<Rigidbody2D>();
         OnGround = true;
+        transformed = false;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
