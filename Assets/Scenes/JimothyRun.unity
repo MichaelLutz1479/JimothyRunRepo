@@ -1832,6 +1832,9 @@ MonoBehaviour:
   - {fileID: 7732946432683814769, guid: 15475c9f1c786bb4d9df0a21e05fd6fb, type: 3}
   - {fileID: 7732946432683814769, guid: 256db18cecac7b143ac9b877e7dd607f, type: 3}
   - {fileID: 7732946432683814769, guid: f8e37fba9d4816c4cb2a5d03348518de, type: 3}
+  - {fileID: 7732946432683814769, guid: a0e1927e5fe9e944387b722f43bbfeb8, type: 3}
+  - {fileID: 7732946432683814769, guid: de209333331d8244baeb35a4d4e0983d, type: 3}
+  - {fileID: 7732946432683814769, guid: de209333331d8244baeb35a4d4e0983d, type: 3}
   roomSpeed: 2
   roomWidth: 10
 --- !u!1 &2049860693
