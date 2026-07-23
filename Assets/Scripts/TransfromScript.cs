@@ -9,6 +9,9 @@ public class TransformScript : MonoBehaviour
 
     bool transformed = false;
 
+    public PolygonCollider2D humanCollider;
+    public PolygonCollider2D raccoonCollider;
+
 
     /*
      Do not put the input actions in Update()
@@ -21,10 +24,14 @@ public class TransformScript : MonoBehaviour
         if (transformed == false)
         {
             transformed = true;
+            humanCollider.enabled = false;
+            raccoonCollider.enabled = true;
         }
         else if (transformed == true)
         {
             transformed = false;
+            humanCollider.enabled = true;
+            raccoonCollider.enabled = false;
         }
     }
 

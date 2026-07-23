@@ -4,21 +4,12 @@ using UnityEngine.InputSystem;
 
 public class PlayerScript : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    //ADD THIS TO THE SCRIPT OTHERWISE INPUT ACTION WILL NOT WORK
-
-
-
-
-    
-
     public bool transformed = false;
 
+    public PolygonCollider2D humanCollider;
+    public PolygonCollider2D raccoonCollider;
 
-    /*
-     Do not put the input actions in Update()
-     I can set up the inspector stuff and keybinds, but if you try to run the game before I add those you will get errors, just ignore them.
-     */
+    public bool OnGround;
 
     //Z, F
     public void TransfromAction(InputAction.CallbackContext context)
@@ -26,10 +17,14 @@ public class PlayerScript : MonoBehaviour
         if (transformed == false)
         {
             transformed = true;
+            humanCollider.enabled = false;
+            raccoonCollider.enabled = true;
         }
         else if (transformed == true)
         {
             transformed = false;
+            humanCollider.enabled = true;
+            raccoonCollider.enabled = false;
         }
     }
 
@@ -59,10 +54,6 @@ void Start()
         OnGround = true;
     }
 
-    // Update is called once per frame
-
-    public bool OnGround;
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
         OnGround = true;
@@ -71,18 +62,5 @@ void Start()
     private void OnCollisionExit2D(Collision2D collision)
     {
         OnGround = false;
-    }
-
-    void Update()
-    {
-        
-        if (Input.GetKeyDown(KeyCode.W) == true)
-        {
-            if (OnGround == true)
-            {
-                GetComponent<Rigidbody2D>().AddForce(new Vector2(0f , 350f));
-            }
-        }
-        
     }
 }
