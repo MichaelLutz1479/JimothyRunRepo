@@ -7,6 +7,7 @@ public class PlayerScript : MonoBehaviour
     public bool transformed = false;
     public PolygonCollider2D humanCollider;
     public PolygonCollider2D raccoonCollider;
+    public PolygonCollider2D crouchCollider;
     public Sprite CrouchSprite;
     public bool OnGround;
     public bool Crouched = false;
@@ -39,11 +40,25 @@ public class PlayerScript : MonoBehaviour
     //S, Down Arrow
     public void CrouchAction(InputAction.CallbackContext context)
     {
-        if (transformed == true)
+        if (context.performed)
+        {
+            if (transformed == true)
+            {
+                GetComponent<SpriteRenderer>().sprite = CrouchSprite;
+                Crouched = true;
+                crouchCollider.enabled = true;
+                raccoonCollider.enabled = false;
+            }
+        }
+
+        if (context.canceled)
         {
             GetComponent<SpriteRenderer>().sprite = CrouchSprite;
-            Crouched = true;
+            Crouched = false;
+            crouchCollider.enabled = false;
+            raccoonCollider.enabled = true;
         }
+
     }
 
 
