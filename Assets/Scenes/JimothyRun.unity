@@ -470,13 +470,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3849974659992573233, guid: d7e2d753af1f5b94a8fe1e640dadd0a1, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: -0.04347826
+      objectReference: {fileID: 0}
+    - target: {fileID: 3849974659992573233, guid: d7e2d753af1f5b94a8fe1e640dadd0a1, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3849974659992573233, guid: d7e2d753af1f5b94a8fe1e640dadd0a1, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.4375
+      objectReference: {fileID: 0}
     - target: {fileID: 5128560439467810832, guid: d7e2d753af1f5b94a8fe1e640dadd0a1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 5128560439467810832, guid: d7e2d753af1f5b94a8fe1e640dadd0a1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.37
+      value: -5.07
       objectReference: {fileID: 0}
     - target: {fileID: 5128560439467810832, guid: d7e2d753af1f5b94a8fe1e640dadd0a1, type: 3}
       propertyPath: m_LocalPosition.z
