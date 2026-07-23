@@ -31,9 +31,9 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 8086713854969670681}
   - {fileID: 68953576842470831}
   - {fileID: 6964384547709299473}
-  - {fileID: 7542139584507511148}
   - {fileID: 5577403179988171503}
   - {fileID: 3082334894066893211}
   - {fileID: 2232476368925682521}
@@ -321,7 +321,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2577877725765842076, guid: c910089ba097ffa4aa233454bdbf45b4, type: 3}
   m_PrefabInstance: {fileID: 4412735229696860101}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &6086826670431119226
+--- !u!1001 &5542251093517552143
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -331,15 +331,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1202992649105014075, guid: c1a68d8c561da014d863779f6c73a2ad, type: 3}
       propertyPath: m_Name
-      value: Platform
+      value: Platform (5)
       objectReference: {fileID: 0}
     - target: {fileID: 4383074901512168982, guid: c1a68d8c561da014d863779f6c73a2ad, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.002375
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4383074901512168982, guid: c1a68d8c561da014d863779f6c73a2ad, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.261284
+      value: 0.3125
       objectReference: {fileID: 0}
     - target: {fileID: 4383074901512168982, guid: c1a68d8c561da014d863779f6c73a2ad, type: 3}
       propertyPath: m_LocalPosition.x
@@ -347,7 +347,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4383074901512168982, guid: c1a68d8c561da014d863779f6c73a2ad, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.373
+      value: 0.34375
       objectReference: {fileID: 0}
     - target: {fileID: 4383074901512168982, guid: c1a68d8c561da014d863779f6c73a2ad, type: 3}
       propertyPath: m_LocalPosition.z
@@ -390,10 +390,10 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1a68d8c561da014d863779f6c73a2ad, type: 3}
---- !u!4 &7542139584507511148 stripped
+--- !u!4 &8086713854969670681 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4383074901512168982, guid: c1a68d8c561da014d863779f6c73a2ad, type: 3}
-  m_PrefabInstance: {fileID: 6086826670431119226}
+  m_PrefabInstance: {fileID: 5542251093517552143}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6662435451170622727
 PrefabInstance:
