@@ -1304,8 +1304,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Score: 00000'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 1f34fce95d2ad6041acc3acfa06b4d2c, type: 2}
-  m_sharedMaterial: {fileID: 5958479798073831759, guid: 1f34fce95d2ad6041acc3acfa06b4d2c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1906,8 +1906,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Time: 00:00'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 1f34fce95d2ad6041acc3acfa06b4d2c, type: 2}
-  m_sharedMaterial: {fileID: 5958479798073831759, guid: 1f34fce95d2ad6041acc3acfa06b4d2c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1989,6 +1989,8 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1234663592}
+  - {fileID: 786995952}
+  - {fileID: 2025546158}
   - {fileID: 85785293}
   - {fileID: 635970246}
   - {fileID: 32743470}
@@ -1996,6 +1998,4 @@ SceneRoots:
   - {fileID: 561854575}
   - {fileID: 959957086}
   - {fileID: 1237971924}
-  - {fileID: 786995952}
-  - {fileID: 2025546158}
   - {fileID: 657345487}
