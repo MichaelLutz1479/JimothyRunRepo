@@ -33,7 +33,7 @@ public class PlayerScript : MonoBehaviour
     {
         if (transformed == false && OnGround == true)
         {
-            GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 350f));
+            GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 200f));
         }
     }
 
