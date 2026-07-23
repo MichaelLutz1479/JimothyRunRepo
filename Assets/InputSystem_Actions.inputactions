@@ -38,10 +38,10 @@
                 {
                     "name": "",
                     "id": "e16beab2-2e47-4cff-a561-a831c64376c7",
-                    "path": "<Keyboard>/z",
+                    "path": "<Keyboard>/q",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";Keyboard&Mouse",
+                    "groups": ";Keyboard&Mouse;Gamepad",
                     "action": "TransformAction",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -49,7 +49,7 @@
                 {
                     "name": "",
                     "id": "2cc5e991-8115-4bb2-9f26-9a9edee7f85c",
-                    "path": "<Keyboard>/f",
+                    "path": "<Keyboard>/e",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",

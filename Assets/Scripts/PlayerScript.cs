@@ -11,7 +11,7 @@ public class PlayerScript : MonoBehaviour
 
     public bool OnGround;
 
-    //Z, F
+    //Q, E
     public void TransfromAction(InputAction.CallbackContext context)
     {
         if (transformed == false)
