@@ -1404,8 +1404,13 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Score: 00000'
   m_isRightToLeft: 0
+<<<<<<< HEAD
   m_fontAsset: {fileID: 11400000, guid: 2c9a1cf737cba9a408bdbe6079bb68d2, type: 2}
   m_sharedMaterial: {fileID: -6251941247217858866, guid: 2c9a1cf737cba9a408bdbe6079bb68d2, type: 2}
+=======
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+>>>>>>> 5e3c4157314c134f21ebc99b2b6a2720190eed3e
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1981,6 +1986,9 @@ MonoBehaviour:
   - {fileID: 7732946432683814769, guid: 15475c9f1c786bb4d9df0a21e05fd6fb, type: 3}
   - {fileID: 7732946432683814769, guid: 256db18cecac7b143ac9b877e7dd607f, type: 3}
   - {fileID: 7732946432683814769, guid: f8e37fba9d4816c4cb2a5d03348518de, type: 3}
+  - {fileID: 7732946432683814769, guid: a0e1927e5fe9e944387b722f43bbfeb8, type: 3}
+  - {fileID: 7732946432683814769, guid: de209333331d8244baeb35a4d4e0983d, type: 3}
+  - {fileID: 7732946432683814769, guid: de209333331d8244baeb35a4d4e0983d, type: 3}
   roomSpeed: 2
   roomWidth: 10
 --- !u!1 &2049860693
@@ -2055,8 +2063,13 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Time: 00:00'
   m_isRightToLeft: 0
+<<<<<<< HEAD
   m_fontAsset: {fileID: 11400000, guid: 2c9a1cf737cba9a408bdbe6079bb68d2, type: 2}
   m_sharedMaterial: {fileID: -6251941247217858866, guid: 2c9a1cf737cba9a408bdbe6079bb68d2, type: 2}
+=======
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+>>>>>>> 5e3c4157314c134f21ebc99b2b6a2720190eed3e
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2138,6 +2151,8 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1234663592}
+  - {fileID: 786995952}
+  - {fileID: 2025546158}
   - {fileID: 85785293}
   - {fileID: 635970246}
   - {fileID: 32743470}
@@ -2145,8 +2160,6 @@ SceneRoots:
   - {fileID: 561854575}
   - {fileID: 959957086}
   - {fileID: 1237971924}
-  - {fileID: 786995952}
-  - {fileID: 2025546158}
   - {fileID: 657345487}
   - {fileID: 903783560}
   - {fileID: 1087640102}
