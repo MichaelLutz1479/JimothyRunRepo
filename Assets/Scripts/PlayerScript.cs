@@ -11,6 +11,7 @@ public class PlayerScript : MonoBehaviour
     public Sprite CrouchSprite;
     public bool OnGround;
     public bool Crouched = false;
+
     //Q, E
     public void TransfromAction(InputAction.CallbackContext context)
     {
