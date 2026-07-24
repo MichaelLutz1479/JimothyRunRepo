@@ -11,6 +11,7 @@ public class PlayerScript : MonoBehaviour
     public Sprite CrouchSprite;
     public bool OnGround;
     public bool Crouched = false;
+    public GameObject LandingCloud;
 
     //Q, E
     public void TransfromAction(InputAction.CallbackContext context)
@@ -74,6 +75,7 @@ void Start()
     private void OnCollisionEnter2D(Collision2D collision)
     {
         OnGround = true;
+        Instantiate(LandingCloud);
     }
 
     private void OnCollisionExit2D(Collision2D collision)
