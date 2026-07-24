@@ -18,7 +18,7 @@ public class AnimationHandlerScript : MonoBehaviour
         Application.targetFrameRate = 60;
         JimothyForm = false;
     }
-    //Sorry Oliver lowkey had to change how "JimothyForm" works to fix a bug. False means human now. 
+    //Sorry Oliver lowkey had to change how "JimothyForm" works to fix a bug. False means human now. ok np
     bool JimothyCrouch = false;
     bool JimothyForm = false;
     public int AnimationFrameCount = 0;
