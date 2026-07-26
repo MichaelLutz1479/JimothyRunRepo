@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: -680660975740783310, guid: 92c12c4b523e5c64b821ead8e8c076a1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -103,6 +103,5 @@ MonoBehaviour:
   LandFrame1: {fileID: -680660975740783310, guid: 92c12c4b523e5c64b821ead8e8c076a1, type: 3}
   LandFrame2: {fileID: -7675352574419614511, guid: fe3e58a74f31b2f46a38e9385963d68c, type: 3}
   LandFrame3: {fileID: 1927080095654724293, guid: 001fd7d806da4174fa054584e02262aa, type: 3}
-  Jimothy: {fileID: 5969426408877030200, guid: d7e2d753af1f5b94a8fe1e640dadd0a1, type: 3}
   AnimSpeed: 30
   FrameCount: 0

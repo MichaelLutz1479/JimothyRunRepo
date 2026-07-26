@@ -1,3 +1,4 @@
+using System;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -75,7 +76,14 @@ void Start()
     private void OnCollisionEnter2D(Collision2D collision)
     {
         OnGround = true;
-        Instantiate(LandingCloud);
+        if (transformed == false)
+        {
+            Instantiate(LandingCloud, transform.position + new Vector3(0f, -0.75f, 0f), Quaternion.identity);
+        }
+        else
+        {
+            Instantiate(LandingCloud, transform.position, Quaternion.identity);
+        }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
