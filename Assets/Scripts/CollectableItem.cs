@@ -2,8 +2,6 @@ using UnityEngine;
 
 public class CollectableItem : MonoBehaviour
 {
-    [SerializeField] private Score score;
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -20,7 +18,7 @@ public class CollectableItem : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            score.AddScore();
+            Score.Instance.AddScore();
             Destroy(gameObject);
         }
     }

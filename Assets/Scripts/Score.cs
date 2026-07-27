@@ -3,12 +3,15 @@ using TMPro;
 
 public class Score : MonoBehaviour
 {
+    public static Score Instance;
+
     [SerializeField] private TextMeshProUGUI scoreText;
 
     private int score = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        Instance = this;
         scoreText.text = "Score: " + score;
     }
 
