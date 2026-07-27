@@ -14,6 +14,58 @@ public class PlayerScript : MonoBehaviour
     public bool Crouched = false;
     public GameObject LandingCloud;
 
+    public Transform humanGroundCheck;
+    public Transform raccoonGroundCheck;
+    public float groundCheckRadius = 0.15f;
+    public LayerMask physicsObjectLayer;
+    private bool firstGroundCheck = true;
+
+    private bool wasGrounded;
+
+    void FixedUpdate()
+    {
+        Transform currentGroundCheck = transformed ? raccoonGroundCheck : humanGroundCheck;
+
+        wasGrounded = OnGround;
+
+        OnGround = Physics2D.OverlapCircle(currentGroundCheck.position, groundCheckRadius, physicsObjectLayer);
+
+        if (!wasGrounded && OnGround)
+        {
+            if (firstGroundCheck == true)
+            {
+                firstGroundCheck = false;
+            }
+            else
+            {
+                if (transformed == false)
+                {
+                    Instantiate(LandingCloud, transform.position + new Vector3(0f, -0.75f, 0f), Quaternion.identity);
+                }
+                else
+                {
+                    Instantiate(LandingCloud, transform.position, Quaternion.identity);
+                }
+            }
+
+        }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        if (humanGroundCheck != null)
+        {
+            Gizmos.color = Color.green;
+            Gizmos.DrawWireSphere(humanGroundCheck.position, groundCheckRadius);
+        }
+
+        if (raccoonGroundCheck != null)
+        {
+            Gizmos.color = Color.blue;
+            Gizmos.DrawWireSphere(raccoonGroundCheck.position, groundCheckRadius);
+        }
+    }
+
     //Q, E
     public void TransfromAction(InputAction.CallbackContext context)
     {
@@ -66,30 +118,10 @@ public class PlayerScript : MonoBehaviour
 
 
 
-void Start()
-    {
-        GetComponent<Rigidbody2D>();
-        OnGround = true;
-        transformed = false;
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        OnGround = true;
-        if (transformed == false)
+    void Start()
         {
-            Instantiate(LandingCloud, transform.position + new Vector3(0f, -0.75f, 0f), Quaternion.identity);
+            GetComponent<Rigidbody2D>();
+            OnGround = true;
+            transformed = false;
         }
-        else
-        {
-            Instantiate(LandingCloud, transform.position, Quaternion.identity);
-        }
-    }
-
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        OnGround = false;
-    }
-
-
 }

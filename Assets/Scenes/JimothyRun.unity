@@ -488,7 +488,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5128560439467810832, guid: d7e2d753af1f5b94a8fe1e640dadd0a1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.07
+      value: -5.026
       objectReference: {fileID: 0}
     - target: {fileID: 5128560439467810832, guid: d7e2d753af1f5b94a8fe1e640dadd0a1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -658,9 +658,31 @@ PrefabInstance:
       propertyPath: raccoonCollider
       value: 
       objectReference: {fileID: 931335897}
+    - target: {fileID: 8879382803712966774, guid: d7e2d753af1f5b94a8fe1e640dadd0a1, type: 3}
+      propertyPath: humanGroundCheck
+      value: 
+      objectReference: {fileID: 1322534955}
+    - target: {fileID: 8879382803712966774, guid: d7e2d753af1f5b94a8fe1e640dadd0a1, type: 3}
+      propertyPath: groundCheckRadius
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8879382803712966774, guid: d7e2d753af1f5b94a8fe1e640dadd0a1, type: 3}
+      propertyPath: raccoonGroundCheck
+      value: 
+      objectReference: {fileID: 1609500823}
+    - target: {fileID: 8879382803712966774, guid: d7e2d753af1f5b94a8fe1e640dadd0a1, type: 3}
+      propertyPath: physicsObjectLayer.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 5128560439467810832, guid: d7e2d753af1f5b94a8fe1e640dadd0a1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1322534955}
+    - targetCorrespondingSourceObject: {fileID: 5128560439467810832, guid: d7e2d753af1f5b94a8fe1e640dadd0a1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1609500823}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5969426408877030200, guid: d7e2d753af1f5b94a8fe1e640dadd0a1, type: 3}
       insertIndex: -1
@@ -672,6 +694,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 931335898}
   m_SourcePrefab: {fileID: 100100000, guid: d7e2d753af1f5b94a8fe1e640dadd0a1, type: 3}
+--- !u!4 &635970247 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5128560439467810832, guid: d7e2d753af1f5b94a8fe1e640dadd0a1, type: 3}
+  m_PrefabInstance: {fileID: 635970246}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &657345485
 GameObject:
   m_ObjectHideFlags: 0
@@ -1211,7 +1238,7 @@ Transform:
   m_GameObject: {fileID: 959957081}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.7, y: 0, z: 0}
+  m_LocalPosition: {x: -9.3936, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 10.699688, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1689,6 +1716,68 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1322534954
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1322534955}
+  m_Layer: 0
+  m_Name: Human Ground Check
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1322534955
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322534954}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.0322, y: 0.174, z: 0}
+  m_LocalScale: {x: 1.0530739, y: 0.19125, z: 0.5}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 635970247}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1609500822
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1609500823}
+  m_Layer: 0
+  m_Name: Raccoon Ground Check
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1609500823
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609500822}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.0322, y: 0.805, z: 0}
+  m_LocalScale: {x: 1.0530739, y: 0.19125, z: 0.5}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 635970247}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2025546155
 GameObject:
