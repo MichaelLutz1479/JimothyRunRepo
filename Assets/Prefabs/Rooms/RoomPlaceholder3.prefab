@@ -436,6 +436,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OneWayPlatform
       objectReference: {fileID: 0}
+    - target: {fileID: 1436819250652722531, guid: c910089ba097ffa4aa233454bdbf45b4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2577877725765842076, guid: c910089ba097ffa4aa233454bdbf45b4, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.22222222
