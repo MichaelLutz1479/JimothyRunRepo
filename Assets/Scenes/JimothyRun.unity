@@ -607,6 +607,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 931335899}
     - target: {fileID: 8879382803712966774, guid: d7e2d753af1f5b94a8fe1e640dadd0a1, type: 3}
+      propertyPath: TransformEffect
+      value: 
+      objectReference: {fileID: 785291330192279738, guid: aadc8c10abf769a46939ca7a5e31cd31, type: 3}
+    - target: {fileID: 8879382803712966774, guid: d7e2d753af1f5b94a8fe1e640dadd0a1, type: 3}
       propertyPath: raccoonCollider
       value: 
       objectReference: {fileID: 931335897}
