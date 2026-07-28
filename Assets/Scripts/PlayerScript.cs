@@ -13,6 +13,7 @@ public class PlayerScript : MonoBehaviour
     public bool OnGround;
     public bool Crouched = false;
     public GameObject LandingCloud;
+    public GameObject TransformEffect;
 
     public Transform humanGroundCheck;
     public Transform raccoonGroundCheck;
@@ -69,6 +70,7 @@ public class PlayerScript : MonoBehaviour
     //Q, E
     public void TransfromAction(InputAction.CallbackContext context)
     {
+        Instantiate(TransformEffect, transform.position, Quaternion.identity);
         if (transformed == false)
         {
             transformed = true;

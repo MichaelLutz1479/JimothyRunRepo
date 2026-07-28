@@ -19,7 +19,6 @@ public class AnimationHandlerScript : MonoBehaviour
         JimothyForm = false;
     }
     //Sorry Oliver lowkey had to change how "JimothyForm" works to fix a bug. False means human now. ok np
-    bool JimothyCrouch = false;
     bool JimothyForm = false;
     public int AnimationFrameCount = 0;
     public int RunAnimationSpeed = 20;
