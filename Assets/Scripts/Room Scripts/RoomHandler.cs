@@ -5,13 +5,13 @@ public class RoomHandler : MonoBehaviour
 {
     public List<GameObject> roomPrefabs;
 
-    /*public List<GameObject> startHigh;
+    public List<GameObject> startHigh;
     public List<GameObject> startMid;
     public List<GameObject> startLow;
 
     public List<GameObject> endHigh;
     public List<GameObject> endMid;
-    public List<GameObject> endLow;*/
+    public List<GameObject> endLow;
 
     public float roomSpeed = 5f;
     public float roomWidth = 10f;
