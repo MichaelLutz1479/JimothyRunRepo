@@ -7,7 +7,7 @@ public class Score : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI scoreText;
 
-    private int score = 0;
+    private int score = 1;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -20,5 +20,10 @@ public class Score : MonoBehaviour
     {
         score++;
         scoreText.text = "Score: " + score;
+    }
+
+    public int CurrentScore
+    {
+        get { return score; }
     }
 }
