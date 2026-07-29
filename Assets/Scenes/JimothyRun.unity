@@ -2478,9 +2478,9 @@ MonoBehaviour:
   startMid:
   - {fileID: 7732946432683814769, guid: 805ec536475cec640a385a4b2d80f087, type: 3}
   - {fileID: 7732946432683814769, guid: f8e37fba9d4816c4cb2a5d03348518de, type: 3}
+  - {fileID: 7732946432683814769, guid: 15475c9f1c786bb4d9df0a21e05fd6fb, type: 3}
   startLow:
   - {fileID: 7732946432683814769, guid: 9fa5c01f6ca6ed14e919524dc702ad3c, type: 3}
-  - {fileID: 7732946432683814769, guid: 15475c9f1c786bb4d9df0a21e05fd6fb, type: 3}
   endHigh:
   - {fileID: 7732946432683814769, guid: 805ec536475cec640a385a4b2d80f087, type: 3}
   - {fileID: 7732946432683814769, guid: 15475c9f1c786bb4d9df0a21e05fd6fb, type: 3}
