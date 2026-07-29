@@ -3,6 +3,8 @@ using TMPro;
 
 public class SurvivalScore : MonoBehaviour
 {
+    public static SurvivalScore Instance;
+
     [Header("UI Reference")]
     [SerializeField] private TextMeshProUGUI score;
 
@@ -11,6 +13,11 @@ public class SurvivalScore : MonoBehaviour
 
     private float elapsedTime = 0f;
     private bool isJimothyAlive = true;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     void Update()
     {
@@ -31,5 +38,13 @@ public class SurvivalScore : MonoBehaviour
     public void PlayerDied()
     {
         isJimothyAlive = false;
+    }
+
+    public int CurrentScore
+    {
+        get
+        {
+            return Mathf.FloorToInt(elapsedTime * scoreMultiplier);
+        }
     }
 }

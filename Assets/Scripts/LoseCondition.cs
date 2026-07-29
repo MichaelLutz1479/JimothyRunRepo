@@ -3,22 +3,17 @@ using UnityEngine.SceneManagement;
 
 public class LoseCondition : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public static int FinalScore;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
+            int collectScore = Score.Instance.CurrentScore;
+            int timeScore = SurvivalScore.Instance.CurrentScore;
+
+            FinalScore = collectScore * timeScore;
+
             SceneManager.LoadScene("LoseScene");
         }
     }
