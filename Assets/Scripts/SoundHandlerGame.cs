@@ -9,6 +9,10 @@ public class SoundHandlerGame : MonoBehaviour
     void Awake()
     {
         DontDestroyOnLoad(this);
+    }
+
+    private void Start()
+    {
         mainGameLoop.Play();
     }
 
