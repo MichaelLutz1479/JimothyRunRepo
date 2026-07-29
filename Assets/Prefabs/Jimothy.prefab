@@ -173,6 +173,7 @@ MonoBehaviour:
   OnGround: 0
   Crouched: 0
   LandingCloud: {fileID: 8602237313682361616, guid: b890ed53859211345b0bc428dfd7c499, type: 3}
+  TransformEffect: {fileID: 785291330192279738, guid: aadc8c10abf769a46939ca7a5e31cd31, type: 3}
   humanGroundCheck: {fileID: 2426765624709785283}
   raccoonGroundCheck: {fileID: 3795911644558631791}
   groundCheckRadius: 0.15
