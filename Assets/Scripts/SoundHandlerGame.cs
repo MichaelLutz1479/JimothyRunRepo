@@ -2,10 +2,14 @@ using UnityEngine;
 
 public class SoundHandlerGame : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    public AudioSource mainGameLoop;
+
+
     void Awake()
     {
         DontDestroyOnLoad(this);
+        mainGameLoop.Play();
     }
 
 }

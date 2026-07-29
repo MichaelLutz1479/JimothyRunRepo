@@ -235,7 +235,7 @@ GameObject:
   - component: {fileID: 377246152}
   - component: {fileID: 377246151}
   m_Layer: 0
-  m_Name: Main Loop
+  m_Name: Main Menu Loop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -252,7 +252,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 44a7046b44942c94f9c82e87151a80da, type: 3}
+  m_Resource: {fileID: 8300000, guid: 16b2753132c9e1c4f9bacc3bfffb344e, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -772,7 +772,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 441284845a10edb4f978986dcbc882aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainLoop: {fileID: 377246151}
+  mainMenuLoop: {fileID: 377246151}
 --- !u!4 &709354001
 Transform:
   m_ObjectHideFlags: 0
