@@ -23,6 +23,12 @@ public class StartMenu : MonoBehaviour
         menuHover.Play();
     }
 
+    public void Credits()
+    {
+        SceneManager.LoadScene("Credits");
+        menuSelect.Play();
+    }
+
     public void StartTheGame()
     {
         SceneManager.LoadScene("JimothyRun");
