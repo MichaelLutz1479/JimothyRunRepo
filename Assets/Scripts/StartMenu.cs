@@ -3,6 +3,9 @@ using UnityEngine.SceneManagement;
 
 public class StartMenu : MonoBehaviour
 {
+    public AudioSource menuSelect;
+
+    public AudioSource menuHover;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -15,19 +18,27 @@ public class StartMenu : MonoBehaviour
         
     }
 
+    public void MouseHover()
+    {
+        menuHover.Play();
+    }
+
     public void StartTheGame()
     {
         SceneManager.LoadScene("JimothyRun");
+        menuSelect.Play();
     }
 
     public void Tutorial()
     {
         SceneManager.LoadScene("TutorialScence");
+        menuSelect.Play();
     }
 
     public void QuitTheGame()
     {
         Application.Quit();
+        menuSelect.Play();
     }
 
     public void Restart()
