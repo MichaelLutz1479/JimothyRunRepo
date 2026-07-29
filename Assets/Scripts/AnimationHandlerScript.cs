@@ -12,6 +12,12 @@ public class AnimationHandlerScript : MonoBehaviour
     public Sprite JimothyRaccoonRun1;
     public Sprite JimothyRaccoonRun2;
     public Sprite JimothyRaccoonCrouch2;
+
+    public AudioSource jimoCrawl1;
+    public AudioSource jimoCrawl2;
+
+    int randomInt = 1;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -23,6 +29,27 @@ public class AnimationHandlerScript : MonoBehaviour
     public int AnimationFrameCount = 0;
     public int RunAnimationSpeed = 20;
     // Update is called once per frame
+
+    void PlayEffect()
+    {
+
+        if (randomInt == 1)
+        {
+            jimoCrawl1.Play();
+        }
+        else if (randomInt == 2)
+        {
+            jimoCrawl2.Play();
+        }
+
+        randomInt++;
+
+        if (randomInt == 3)
+        {
+            randomInt = 1;
+        }
+    }
+
     void Update()
     {
         JimothyForm = Jimothy.GetComponent<PlayerScript>().transformed;
@@ -71,10 +98,12 @@ public class AnimationHandlerScript : MonoBehaviour
                 if (AnimationFrameCount == (RunAnimationSpeed / 2))
                 {
                     Jimothy.GetComponent<SpriteRenderer>().sprite = JimothyRaccoonRun1;
+                    PlayEffect();
                 }
                 if (AnimationFrameCount == RunAnimationSpeed)
                 {
                     Jimothy.GetComponent<SpriteRenderer>().sprite = JimothyRaccoonRun2;
+                    PlayEffect();
                     AnimationFrameCount = 0;
                 }
             }
