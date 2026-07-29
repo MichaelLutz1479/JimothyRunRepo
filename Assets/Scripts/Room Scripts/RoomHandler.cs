@@ -61,7 +61,7 @@ public class RoomHandler : MonoBehaviour
 
         if (lastRoom == null)
         {
-            chosenRoom = roomPrefabs[Random.Range(0, roomPrefabs.Count)];
+            chosenRoom = startLow[Random.Range(0, startLow.Count)];
         }
         else
         {
