@@ -14,10 +14,10 @@ public class Room : MonoBehaviour
 
     public void SetHandler(RoomHandler roomHandler)
     {
-            Debug.Log("========== SET HANDLER HIT =========");
-            handler = roomHandler;
-            Debug.Log(gameObject.name + " assigned handler AFTER SET: " + handler);
-            Debug.Log(gameObject.name + " receieved handler");
+        Debug.Log("========== SET HANDLER HIT =========");
+        handler = roomHandler;
+        Debug.Log(gameObject.name + " assigned handler AFTER SET: " + handler);
+        Debug.Log(gameObject.name + " receieved handler");
 
     }
 
@@ -38,7 +38,7 @@ public class Room : MonoBehaviour
         {
             if (handler != null)
             {
-            handler.SpawnRoom();
+                handler.SpawnRoom();
 
             }
             else
@@ -49,7 +49,7 @@ public class Room : MonoBehaviour
 
         }
 
-        if(transform.position.x < destroyX)
+        if (transform.position.x < destroyX)
         {
             Destroy(gameObject);
         }

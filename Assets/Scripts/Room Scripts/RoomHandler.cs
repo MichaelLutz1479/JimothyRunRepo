@@ -28,7 +28,7 @@ public class RoomHandler : MonoBehaviour
 
     void Start()
     {
-        for(int i = 0; i < 5; i++)
+        for (int i = 0; i < 5; i++)
         {
             SpawnRoom();
         }
@@ -46,7 +46,7 @@ public class RoomHandler : MonoBehaviour
             Debug.Log("Previous Room: " + previousRoom);
         }
 
-        Debug.Log("RoomPrefabs: " + roomPrefabs.Count + " High: " + startHigh.Count + " Mid: " + startMid.Count + " Low: " + startLow.Count + " High: " + endHigh.Count + " Mid: " + endMid.Count + " Low: " +endLow.Count);
+        Debug.Log("RoomPrefabs: " + roomPrefabs.Count + " High: " + startHigh.Count + " Mid: " + startMid.Count + " Low: " + startLow.Count + " High: " + endHigh.Count + " Mid: " + endMid.Count + " Low: " + endLow.Count);
 
         Debug.Log("Is previous room in endHigh: " + endHigh.Contains(previousRoom));
         Debug.Log("Is previous room in endMid: " + endMid.Contains(previousRoom));
@@ -83,9 +83,9 @@ public class RoomHandler : MonoBehaviour
 
         Debug.Log("Spawned: " + chosenRoom.name);
 
-        if(lastRoom == null)
+        if (lastRoom == null)
         {
-            newRoom = Instantiate(chosenRoom, new Vector3(14,0,1), Quaternion.identity);
+            newRoom = Instantiate(chosenRoom, new Vector3(14, 0, 1), Quaternion.identity);
         }
         else
         {
