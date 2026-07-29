@@ -1,5 +1,4 @@
 using System;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -22,6 +21,13 @@ public class PlayerScript : MonoBehaviour
     private bool firstGroundCheck = true;
 
     private bool wasGrounded;
+
+    public AudioSource jimoTransform;
+
+    public AudioSource jimoJump1;
+    public AudioSource jimoJump2;
+
+
 
     void FixedUpdate()
     {
@@ -70,18 +76,22 @@ public class PlayerScript : MonoBehaviour
     //Q, E
     public void TransfromAction(InputAction.CallbackContext context)
     {
-        Instantiate(TransformEffect, transform.position, Quaternion.identity);
-        if (transformed == false)
+        if (context.performed)
         {
-            transformed = true;
-            humanCollider.enabled = false;
-            raccoonCollider.enabled = true;
-        }
-        else if (transformed == true)
-        {
-            transformed = false;
-            humanCollider.enabled = true;
-            raccoonCollider.enabled = false;
+            Instantiate(TransformEffect, transform.position, Quaternion.identity);
+            jimoTransform.Play();
+            if (transformed == false)
+            {
+                transformed = true;
+                humanCollider.enabled = false;
+                raccoonCollider.enabled = true;
+            }
+            else if (transformed == true)
+            {
+                transformed = false;
+                humanCollider.enabled = true;
+                raccoonCollider.enabled = false;
+            }
         }
     }
 
@@ -90,6 +100,17 @@ public class PlayerScript : MonoBehaviour
     {
         if (transformed == false && OnGround == true)
         {
+            int randomInt = UnityEngine.Random.Range(1, 3);
+
+            if (randomInt == 1)
+            {
+                jimoJump1.Play();
+            }
+            else if (randomInt == 2)
+            {
+                jimoJump2.Play();
+            }
+
             GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 200f));
         }
     }
