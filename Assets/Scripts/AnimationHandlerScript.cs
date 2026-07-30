@@ -16,6 +16,9 @@ public class AnimationHandlerScript : MonoBehaviour
     public AudioSource jimoCrawl1;
     public AudioSource jimoCrawl2;
 
+    public AudioSource jimoWalk1;
+    public AudioSource jimoWalk2;
+
     int randomInt = 1;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -30,7 +33,7 @@ public class AnimationHandlerScript : MonoBehaviour
     public int RunAnimationSpeed = 20;
     // Update is called once per frame
 
-    void PlayEffect()
+    void PlayEffectRaccoon()
     {
 
         if (randomInt == 1)
@@ -40,6 +43,26 @@ public class AnimationHandlerScript : MonoBehaviour
         else if (randomInt == 2)
         {
             jimoCrawl2.Play();
+        }
+
+        randomInt++;
+
+        if (randomInt == 3)
+        {
+            randomInt = 1;
+        }
+    }
+
+    void PlayEffectHuman()
+    {
+
+        if (randomInt == 1)
+        {
+            jimoWalk1.Play();
+        }
+        else if (randomInt == 2)
+        {
+            jimoWalk2.Play();
         }
 
         randomInt++;
@@ -65,10 +88,12 @@ public class AnimationHandlerScript : MonoBehaviour
                 if (AnimationFrameCount == (RunAnimationSpeed / 2))
                 {
                     Jimothy.GetComponent<SpriteRenderer>().sprite = JimothyHumanRun1;
+                    PlayEffectHuman();
                 }
                 if (AnimationFrameCount == RunAnimationSpeed)
                 {
                     Jimothy.GetComponent<SpriteRenderer>().sprite= JimothyHumanRun2;
+                    PlayEffectHuman();
                     AnimationFrameCount = 0;
                 }
             }
@@ -98,12 +123,12 @@ public class AnimationHandlerScript : MonoBehaviour
                 if (AnimationFrameCount == (RunAnimationSpeed / 2))
                 {
                     Jimothy.GetComponent<SpriteRenderer>().sprite = JimothyRaccoonRun1;
-                    PlayEffect();
+                    PlayEffectRaccoon();
                 }
                 if (AnimationFrameCount == RunAnimationSpeed)
                 {
                     Jimothy.GetComponent<SpriteRenderer>().sprite = JimothyRaccoonRun2;
-                    PlayEffect();
+                    PlayEffectRaccoon();
                     AnimationFrameCount = 0;
                 }
             }
