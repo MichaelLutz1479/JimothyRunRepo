@@ -15,14 +15,14 @@ public class RoomHandler : MonoBehaviour
 
     private GameObject previousRoom;
 
-    public float roomSpeed = 5f;
+    float roomSpeed = 2.5f;
     public float roomWidth = 10f;
 
     private Room lastRoom;
 
     float nextSpawnX = 14f;
 
-
+    public float RoomSpeed => roomSpeed;
 
 
 
@@ -37,27 +37,12 @@ public class RoomHandler : MonoBehaviour
     void Update()
     {
         nextSpawnX -= roomSpeed * Time.deltaTime;
+        roomSpeed += Time.deltaTime * 0.02f;
     }
 
     public void SpawnRoom()
     {
-        if (endHigh.Contains(previousRoom))
-        {
-            Debug.Log("Previous Room: " + previousRoom);
-        }
-
-        Debug.Log("RoomPrefabs: " + roomPrefabs.Count + " High: " + startHigh.Count + " Mid: " + startMid.Count + " Low: " + startLow.Count + " High: " + endHigh.Count + " Mid: " + endMid.Count + " Low: " + endLow.Count);
-
-        Debug.Log("Is previous room in endHigh: " + endHigh.Contains(previousRoom));
-        Debug.Log("Is previous room in endMid: " + endMid.Contains(previousRoom));
-        Debug.Log("Is previous room in endLow: " + endLow.Contains(previousRoom));
-
         GameObject chosenRoom = roomPrefabs[Random.Range(0, roomPrefabs.Count)];
-        if (chosenRoom == null)
-        {
-            Debug.LogError("No valid room found for this connection");
-            return;
-        }
 
         if (lastRoom == null)
         {
@@ -81,7 +66,6 @@ public class RoomHandler : MonoBehaviour
 
         GameObject newRoom;
 
-        Debug.Log("Spawned: " + chosenRoom.name);
 
         if (lastRoom == null)
         {
@@ -97,12 +81,7 @@ public class RoomHandler : MonoBehaviour
 
         Room room = newRoom.GetComponent<Room>();
 
-        Debug.Log("Got Room component: " + room);
-
-        room.SetSpeed(roomSpeed);
         room.SetHandler(this);
-
-        Debug.Log("Handler assigned to: " + newRoom.name);
 
         previousRoom = chosenRoom;
 

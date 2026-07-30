@@ -27,6 +27,8 @@ public class PlayerScript : MonoBehaviour
     public AudioSource jimoJump1;
     public AudioSource jimoJump2;
 
+    private Rigidbody2D rb;
+
 
 
     void FixedUpdate()
@@ -56,6 +58,12 @@ public class PlayerScript : MonoBehaviour
             }
 
         }
+
+        if (transformed == true)
+        {
+            rb.linearVelocity = new Vector2((float)0.25, rb.linearVelocity.y);
+        }
+
     }
 
     private void OnDrawGizmosSelected()
@@ -143,7 +151,7 @@ public class PlayerScript : MonoBehaviour
 
     void Start()
         {
-            GetComponent<Rigidbody2D>();
+            rb = GetComponent<Rigidbody2D>();
             OnGround = true;
             transformed = false;
         }
