@@ -14,25 +14,12 @@ public class Room : MonoBehaviour
 
     public void SetHandler(RoomHandler roomHandler)
     {
-        Debug.Log("========== SET HANDLER HIT =========");
         handler = roomHandler;
-        Debug.Log(gameObject.name + " assigned handler AFTER SET: " + handler);
-        Debug.Log(gameObject.name + " receieved handler");
-
-    }
-
-    public void SetSpeed(float speed)
-    {
-        roomSpeed = speed;
     }
 
     void Update()
     {
-        Debug.Log("========== UPDATE HIT =========");
-
-        transform.position = new Vector3(transform.position.x - roomSpeed * Time.deltaTime, transform.position.y, transform.position.z);
-
-        Debug.Log(gameObject.name + " assigned handler UPDATE: " + handler);
+        transform.position = new Vector3(transform.position.x - handler.RoomSpeed * Time.deltaTime, transform.position.y, transform.position.z);
 
         if (!hasSpawnedNext && transform.position.x < 20f)
         {
@@ -41,10 +28,7 @@ public class Room : MonoBehaviour
                 handler.SpawnRoom();
 
             }
-            else
-            {
-                Debug.LogError(gameObject.name + " has no room handler");
-            }
+
             hasSpawnedNext = true;
 
         }
