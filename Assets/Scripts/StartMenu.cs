@@ -6,10 +6,14 @@ public class StartMenu : MonoBehaviour
     public AudioSource menuSelect;
 
     public AudioSource menuHover;
+
+    public AudioSource mainMenuLoop;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+
+    void Awake()
     {
-        
+        mainMenuLoop.Play();
     }
 
     // Update is called once per frame
@@ -25,30 +29,32 @@ public class StartMenu : MonoBehaviour
 
     public void Credits()
     {
-        SceneManager.LoadScene("Credits");
         menuSelect.Play();
+        SceneManager.LoadScene("Credits");
     }
 
     public void StartTheGame()
     {
-        SceneManager.LoadScene("JimothyRun");
+        mainMenuLoop.Stop();
         menuSelect.Play();
+        SceneManager.LoadScene("JimothyRun");
     }
 
     public void Tutorial()
     {
-        SceneManager.LoadScene("TutorialScence");
         menuSelect.Play();
+        SceneManager.LoadScene("TutorialScence");
     }
 
     public void QuitTheGame()
     {
-        Application.Quit();
         menuSelect.Play();
+        Application.Quit();
     }
 
     public void Restart()
     {
+        mainMenuLoop.Stop();
         SceneManager.LoadScene("JimothyRun");
     }
 
