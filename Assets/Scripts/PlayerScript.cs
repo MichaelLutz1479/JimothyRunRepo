@@ -26,6 +26,7 @@ public class PlayerScript : MonoBehaviour
 
     public AudioSource jimoJump1;
     public AudioSource jimoJump2;
+    public AudioSource jimoJumpLand;
 
     private Rigidbody2D rb;
 
@@ -39,6 +40,7 @@ public class PlayerScript : MonoBehaviour
 
         OnGround = Physics2D.OverlapCircle(currentGroundCheck.position, groundCheckRadius, physicsObjectLayer);
 
+
         if (!wasGrounded && OnGround)
         {
             if (firstGroundCheck == true)
@@ -50,10 +52,12 @@ public class PlayerScript : MonoBehaviour
                 if (transformed == false)
                 {
                     Instantiate(LandingCloud, transform.position + new Vector3(0f, -0.75f, 0f), Quaternion.identity);
+                    jimoJumpLand.Play();
                 }
                 else
                 {
                     Instantiate(LandingCloud, transform.position, Quaternion.identity);
+                    jimoJumpLand.Play();
                 }
             }
 

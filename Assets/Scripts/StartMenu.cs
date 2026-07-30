@@ -26,14 +26,13 @@ public class StartMenu : MonoBehaviour
     {
         menuHover.Play();
     }
-<<<<<<< Updated upstream
-=======
+
+
     public void Back()
     {
         menuSelect.Play();
         SceneManager.LoadScene("StartScene");
     }
->>>>>>> Stashed changes
 
     public void Credits()
     {
